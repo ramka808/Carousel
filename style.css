@@ -52,7 +52,18 @@ body {
 
 .carousel img {
 	height: 340px;
-
 	width: 100%/3;
 	object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+	.carousel img {
+		width: calc(100% / 2);
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.carousel img {
+		width: 100%;
+	}
 }
